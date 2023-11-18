@@ -1,0 +1,85 @@
+<html>
+
+<head><link rel="stylesheet" href="design.css">
+<title>Registration Form</title>
+
+
+</head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="inner-box" id="card">
+          <div class="card-front">
+            <image class="logo" src="./assets/image.png" alt="logo" />
+            <form method="post">
+             <div class="info">
+              <span class= "details">Email</span>
+            </div>
+              <input type="email" name="Email" class="input-box" placeholder="Enter your email " required>
+            
+              <div class="info">
+              <span class= "details">Password</span>
+            </div>
+              <input type="password" name="Password" class="input-box" placeholder=" Enter your password" required>
+
+              <div class="forgot-password">         
+                <a href="" >Forgot Password?</a>
+              </div>
+              <button type="submit" name="submit1" class="sumbit-btn"> Sign in </button>
+             
+                     
+            </form>
+            <button type="button" class="sign-link" onclick="openRegister()">Don't have an account yet? Sign up</button>
+  
+      </div>
+
+<!-- REGISTRATION PART HERE -->
+       <div class="card-back">
+        <div class ="signUpHere">
+         
+          <!-- <image class="logo" src="./assets/image.png" alt="logo" /> -->
+      
+        <h2>Create new account</h2>
+        <div class ="inputHere">
+            <form method="post">
+              <div class="registerHere">
+              <span class="details">Email Address</span>
+            </div>
+              <input type="email" class="input-box" placeholder="Enter your email " name ="Email" required>
+              <div class="registerHere">
+              <span class="details">Create Password</span>
+            </div>
+              <input type="password" class="input-box" placeholder=" Enter your password" name="Password" required>
+              <div class="registerHere">
+              <span class="details">Confirm Password</span>
+            </div>
+              <input type="password" class="input-box" placeholder=" Confirm your password" name="ConfirmPassword" required>
+              <button type="submit" name="register" class="submit-btn">Sign up</button>
+              <!-- <input type="checkbox"><span> Remember Me</span> -->
+            </form>
+          </div>
+          </div>
+            <button type="button" class="sign-link" onclick="openLogin()">Already have an account? Sign in</button>
+            <!-- <a href="">Forgot Password</a> -->
+      </div>
+     
+        
+     <script>
+      
+      var card = document.getElementById("card");
+      function openRegister(){
+        card.style.transform = "rotateY(-180deg)";
+      }
+
+      function openLogin(){
+        card.style.transform = "rotateY(0deg)";
+      }
+
+      function redirectTo(){
+        window.location.assign = ("index.html")
+        card.style.transform = "rotateY(0deg)";
+      }
+    </script>
+		
+</body>
+</html>
