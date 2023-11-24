@@ -4,7 +4,7 @@
     }
     body {
         font-family: Arial, sans-serif;
-        background: url('./assets/photo.jpg') no-repeat;
+        background: url('./assets/images.jpg') no-repeat;
         background-size: cover;
     }
     .container{
@@ -15,8 +15,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        }
+
         
-    }
     .card{
         width: 430px;
         height: 80vh;
@@ -33,6 +34,33 @@
     }
     .logo {
         width: 170px;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 0px;
+        text-align: center;
+       
+    }
+    .logo1{
+        width: 170px;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 0px;
+        text-align: center;    
+    }
+
+    .newAccount {
+        align-items: center;
+        justify-content: center;
+        padding-top: 0px;
+        display: block; 
+        /* font-weight: 500; */
+        /* margin-bottom: 5px; */
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+       
     }
 
     /* .logo1 {
@@ -42,8 +70,8 @@
 
     .card-front,.card-back{
         position: absolute;
-        width: 135%;
-        height: 113%;
+        /* width: 135%;
+        height: 113%; */
         background-position: center ;
         background-size: cover;
         background-color:#5d89ba;
@@ -83,7 +111,7 @@
         outline: none;
         text-align:justify;
         padding-left: 10px;
-        margin-bottom: 20px;
+     
         
         
     }
@@ -114,21 +142,26 @@
         display: flex;
         color: black;
         font-size: 20px !important;
-        margin-top: 10px;
+        margin-top: 2px;
         font-weight: bold;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
        
          
     }
     .signUpHere{
-        margin-top: 40px;
-        padding-top: 50px;   
+        margin-top: 0px; 
         font-family:sans-serif; 
+        align-items: center;
+        justify-content: center;
+        padding-top: 0px;
+        text-align: center;
+      
+    
     }
 
     .inputHere{
-        margin-top: 30px;
-        padding-top: 20px;     
+        margin-top: 0px;
+        padding-top: 5px;     
     }
 
     input::placeholder {
@@ -147,7 +180,6 @@
     
     ::placeholder{
         color: black;
-        font-size: 15px !important;
     }
     
     button{
@@ -216,4 +248,17 @@
         font-size: 13px; /*forgot password*/
        
     }
-    
+
+    /*mobile*/
+@media only screen and (max-width:400px){
+    .container {
+        height:100%;    
+    } 
+
+    .card-front, .card-back {
+      height: 100%;  
+      width:100% !important;
+    }
+}
+
+
