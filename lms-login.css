@@ -126,5 +126,14 @@ label{
   #card-front {
     height: 90vh;
 } 
+
+@media only screen and (max-width: 400px) {
+  .forgot-password a,
+  .sign-link button,
+  .sign-link p {
+  font-size: 10px;
+  color: black;
+} 
+}
 }
 
